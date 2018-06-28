@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>天气预报</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_722156_i3nm4jmzokd.css">
+</head>
+<body>
+    <!--header开始-->
+        <header>
+            <p class="location">
+                <i class="iconfont icon-dingwei"></i>
+                <span class="city">北京</span>
+            </p>
+        </header>
+    <!--main-->
+    <main>
+        <p class="txt-temperature">
+            <span class="temperaturess">
+                33</span>°
+        </p>
+        <p class="txt-weather">多云</p>
+        <div class="ct-wind-humidity">
+            <!--<p class="txt">湿度 47%</p>-->
+            <p class="txt">
+                <span class="txtss">东南风</span>
+                <span class="txts">2</span>级
+            </p>
+        </div>
+        <p class="txt-tips">光芒透过云缝，洒向大地</p>
+    </main>
+    <!--section-->
+    <section class="sec-tomorrow">
+        <div class="item">
+            <div class="top">
+                <p class="date">今天</p>
+                <p class="temperature">
+                    <span class="temperatures">36</span>/<span class="temperaturesss">27</span>°
+                </p>
+            </div>
+            <div class="buttom">
+                <p class="weater">多云转晴</p>
+                <img src="img/1.png" alt="" class="logo">
+            </div>
+        </div>
+        <div class="item">
+            <div class="top">
+                <p class="date">明天</p>
+                <p class="temperature">
+                    <span class="temperatures">36</span>/<span class="temperaturesss">27</span>°
+                </p>
+            </div>
+            <div class="buttom">
+                <p class="weater">多云转晴</p>
+                <img src="img/1.png" alt="" class="logo">
+            </div>
+        </div>
+    </section>
+    <!--sec-hours-->
+    <section class="sec-hours">
+        <ul class="li-hours">
+            <!--<li class="items">-->
+                <!--<p class="txt-time">15:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">16:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">17:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">18:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">19:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">15:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">15:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">15:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">15:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+            <!--<li class="items">-->
+                <!--<p class="txt-time">15:00</p>-->
+                <!--<img src="img/1.png" alt="" class="icon">-->
+                <!--<p class="txt-degree">-->
+                    <!--<span class="txt-degrees">35</span>°-->
+                <!--</p>-->
+            <!--</li>-->
+        </ul>
+    </section>
+    <!--section-sec-days-->
+    <section class="sec-days">
+        <ul class="li-days">
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+            <li class="itemss">
+                <p class="day">昨天</p>
+                <p class="date">6/26</p>
+                <div class="ct-daytime">
+                    <p class="weather">阴</p>
+                    <img src="img/2.png" alt="" class="icon">
+                </div>
+                <div class="ct-night">
+                    <img src="img/4.png" alt="" class="icon">
+                    <p class="weathers">雷阵雨</p>
+                </div>
+                <p class="wind">东北风</p>
+                <p class="wind">三级</p>
+            </li>
+        </ul>
+    </section>
+    <div class="react">
+        <ul class="li-living">
+            <li class="intme">
+                <span class="ico"></span>
+                <p class="content">5和0</p>
+                <p class="title">尾号银行</p>
+            </li>
+            <li class="intme">
+                <span class="ico"></span>
+                <p class="content">5和0</p>
+                <p class="title">尾号银行</p>
+            </li>
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+            <!--<li class="intme">-->
+                <!--<span class="ico"></span>-->
+                <!--<p class="content">5和0</p>-->
+                <!--<p class="title">尾号银行</p>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <div class="living-tab">
+        <span class="current"></span>
+        <span class="current"></span>
+    </div>
+    <footer>
+        <div class="ct-links">
+            <a href="" class="txt-puh">数据来源于中国网</a>
+            <a href="" class="inks">反馈</a>
+            <a href="" class="inks">举报中心</a>
+        </div>
+        <div class="copright">Copyright © 1998 - 2018 Tencent. All Rights Reserved</div>
+    </footer>
+</body>
+</html>
